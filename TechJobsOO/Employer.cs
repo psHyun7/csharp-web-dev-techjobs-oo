@@ -33,5 +33,13 @@ namespace TechJobsOO
         {
             return Value;
         }
+
+        public Job Job
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

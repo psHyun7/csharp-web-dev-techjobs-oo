@@ -7,6 +7,7 @@ namespace TechJobsOO
     {
         public int Id { get; }
         private static int nextId = 1;
+        private string v;
 
         public string Name { get; set; }
         public Employer EmployerName { get; set; }
@@ -27,19 +28,19 @@ namespace TechJobsOO
             EmployerName = employerName;
             EmployerLocation = employerLocation;
             JobType = jobType;
-            JobCoreCompetency = JobCoreCompetency;
+            JobCoreCompetency = jobCoreCompetency;
+        }
+
+        public Job(string v)
+        {
+            this.v = v;
         }
 
         // TODO: Generate Equals() and GetHashCode() methods.
         public override bool Equals(object obj)
         {
             return obj is Job job &&
-                   Id == job.Id &&
-                   Name == job.Name &&
-                   EqualityComparer<Employer>.Default.Equals(EmployerName, job.EmployerName) &&
-                   EqualityComparer<Location>.Default.Equals(EmployerLocation, job.EmployerLocation) &&
-                   EqualityComparer<PositionType>.Default.Equals(JobType, job.JobType) &&
-                   EqualityComparer<CoreCompetency>.Default.Equals(JobCoreCompetency, job.JobCoreCompetency);
+                   Id == job.Id;
         }
 
         public override int GetHashCode()
@@ -49,7 +50,24 @@ namespace TechJobsOO
 
         public override string ToString()
         {
-            return Name;
+            string output;
+            if (Name == null && EmployerName == null && EmployerLocation == null && JobType == null && JobCoreCompetency == null)
+            {
+                output = "\nOOPS! This job does not seem to exist.\n";
+            }
+            else
+            {
+                string notAvailable = "Data not available";
+                output = "\n" +
+                        $"ID: {Id}\n" +
+                        $"Name: {Name.ToString() ?? notAvailable}\n" +
+                        $"Employer: {EmployerName.ToString() ?? notAvailable}\n" +
+                        $"Location: {EmployerLocation.ToString() ?? notAvailable}\n" +
+                        $"Position Type: {JobType.ToString() ?? notAvailable}\n" +
+                        $"Core Competency: {JobCoreCompetency.ToString() ?? notAvailable}\n" +
+                         "\n";
+            }
+            return output;
         }
     }
 }

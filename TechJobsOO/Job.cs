@@ -60,11 +60,11 @@ namespace TechJobsOO
                 string notAvailable = "Data not available";
                 output = "\n" +
                         $"ID: {Id}\n" +
-                        $"Name: {Name.ToString() ?? notAvailable}\n" +
-                        $"Employer: {EmployerName.ToString() ?? notAvailable}\n" +
-                        $"Location: {EmployerLocation.ToString() ?? notAvailable}\n" +
-                        $"Position Type: {JobType.ToString() ?? notAvailable}\n" +
-                        $"Core Competency: {JobCoreCompetency.ToString() ?? notAvailable}\n" +
+                        $"Name: {(String.IsNullOrEmpty(Name.ToString()) ? notAvailable : Name.ToString())}\n" +
+                        $"Employer: {(String.IsNullOrEmpty(EmployerName.ToString()) ? notAvailable : EmployerName.ToString())}\n" +
+                        $"Location: {(String.IsNullOrEmpty(EmployerLocation.ToString()) ? notAvailable : EmployerLocation.ToString())}\n" +
+                        $"Position Type: {(String.IsNullOrEmpty(JobType.ToString()) ? notAvailable : JobType.ToString())}\n" +
+                        $"Core Competency: {(String.IsNullOrEmpty(JobCoreCompetency.ToString()) ? notAvailable : JobCoreCompetency.ToString())}\n" +
                          "\n";
             }
             return output;

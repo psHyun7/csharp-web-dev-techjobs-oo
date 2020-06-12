@@ -1,46 +1,41 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class PositionType
+    public class PositionType : JobField
     {
-        public int Id { get; }
-        private static int nextId = 1;
-        public string Value { get; set; }
+        //public int Id { get; }
+        //private static int nextId = 1;
+        //public string Value { get; set; }
 
-        public PositionType()
-        {
-            Id = nextId;
-            nextId++;
-        }
+        //public PositionType()
+        //{
+        //    Id = nextId;
+        //    nextId++;
+        //}
 
-        public PositionType(string value) : this()
-        {
-            Value = value;
-        }
+        //public PositionType(string value) : this()
+        //{
+        //    Value = value;
+        //}
 
-        // TODO: Add custom Equals(), GetHashCode(), and ToString() methods.
-        public override bool Equals(object obj)
-        {
-            return obj is PositionType type &&
-                   Id == type.Id;
-        }
+        public PositionType() : base() { }
+        public PositionType(string value) : base(value) { }
 
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(Id, Value);
-        }
+        //// TODO: Add custom Equals(), GetHashCode(), and ToString() methods.
+        //public override bool Equals(object obj)
+        //{
+        //    return obj is PositionType type &&
+        //           Id == type.Id;
+        //}
 
-        public override string ToString()
-        {
-            return Value;
-        }
+        //public override int GetHashCode()
+        //{
+        //    return HashCode.Combine(Id, Value);
+        //}
 
-        public Job Job
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        //public override string ToString()
+        //{
+        //    return Value;
+        //}
     }
 }

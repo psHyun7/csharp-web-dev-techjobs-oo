@@ -1,47 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="TechJobsOO.Job">
-    <Position X="6" Y="0.5" Width="1.5" />
+    <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAACAAAAAAAAAAAEgBAAAAQCAAAAAIAAAQAACAAAAAA=</HashCode>
+      <HashCode>CAACAAAAAAAAAAAEgBAAAAQCAAAAAIAAARAACAAAAAA=</HashCode>
       <FileName>Job.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TechJobsOO.Employer">
-    <Position X="3.25" Y="4.5" Width="1.5" />
+    <Position X="3" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAEgBAAAAAAAAACAIAAAAAgAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Employer.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Job" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="TechJobsOO.Location">
-    <Position X="5" Y="4.5" Width="1.5" />
+    <Position X="5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAEgBAAAAAAAAACAIAAAAAgAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Location.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Job" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="TechJobsOO.PositionType">
-    <Position X="6.75" Y="4.5" Width="1.5" />
+    <Position X="7" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAEgBAAAAAAAAACAIAAAAAgAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PositionType.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Job" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="TechJobsOO.CoreCompetency">
-    <Position X="8.5" Y="4.5" Width="1.5" />
+    <Position X="9" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreCompetency.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TechJobsOO.JobField">
+    <Position X="6" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAEgBAAAAAAAAACAIAAAAAgAAAAAAA=</HashCode>
-      <FileName>CoreCompetency.cs</FileName>
+      <FileName>JobField.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Job" />
